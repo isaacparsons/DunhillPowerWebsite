@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dunhill Power</title>
+	<link rel="stylesheet" type="text/css" href="../cssMain/main.css">
+	<meta name="viewport" content="width= device-width">
+	<script src="../js.js"></script>
+</head>
+<body>
+	<div id="mainContainer">
+		<header id="mainHeader">
+			<div id="mainNavContainer">
+				<div id="mainNavTitle">
+					<img class= "mainImg" src="../images/Dunhill Logo1.png">
+				</div>
+				<div id="navMenu">
+					<img id= "navImg" onclick="myFunction()" src="../images/NavMenu.png">
+					<div class="dropdown-content" id="myDropdown">
+					    <a href="home.html"> Home </a>
+						<a href="Management Team.html"> Management Team </a>
+						<a href="Partnerships.html"> Partnerships </a>
+						<a href="Contact Us.html"> Contact Us </a>
+					 </div>
+				</div>
+				<div id="mainNavList">
+					<nav>
+						<ul>
+							<li> <a href="home.html"> Home </a></li>
+							<!--
+							<li class="dropdown"> <a href="About.html"> About </a>
+								<ul class="dropdown-content">
+									<li><a href="About.html#hydroimgdiv"> Our Business </a></li>
+									<li><a href="About.html#turbineimgdiv"> How We Do It </a></li>
+									<li><a href="Management Team.html"> Management Team </a></li>
+								</ul>
+							</li>
+							-->
+							<li> <a href="Providing Solutions.html"> Providing Solutions </a></li>
+							<li> <a href="Management Team.html"> Management Team </a></li>
+							<li> <a href="Partnerships.html"> Partnerships </a></li>
+							<li> <a class="active" href="Contact Us.html"> Contact Us </a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div id="aboutContentMain">
+		<div id="Contactleft">
+			<div class="contactContainer">
+				<h1 class="rightTextContact"> Email: </h1>
+				<h1 class="SecondaryRightTextContacts"> info@dunhillpower.com </h1>
+			</div>
+
+			<!--<div class="contactContainer">
+				<h1 class="rightTextContact"> Phone: </h1>
+				<h1 class="SecondaryRightTextContacts"> ???-???-???? </h1>
+			</div> -->
+
+			<div class="contactContainer">
+				<h1 class="rightTextContact"> Address: </h1>
+				<h1 class="SecondaryRightTextContacts"> 620, 330 5th Avenue SW Calgary, T2P 2W1 </h1>
+			</div>
+			
+		</div>
+		<div id="map"></div>
+		<script>
+	      function initMap() {
+	        var uluru = {lat: 51.0488808, lng: -114.0698032};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 17,
+	          center: uluru
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      }
+	    </script>
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP7niKFkg2xI1d30wGVdTgWhqX4Znm3IY&callback=initMap">
+	    </script>
+		
+	</div>
+	
+
+<footer>
+	<div id="footerDiv">
+		<div id="footerColumn">
+			<h2 class="footerHeader"><a href="home.html"> Home </a></h2>
+			<ul class="footerList">
+				<li class="footerItem"><a href="home.html#HomeContent"> Our Business </a></li>
+				<li class="footerItem"><a href="home.html#clientsdiv"> Our Clients </a></li>	
+			</ul>
+		</div>
+
+		<div id="footerColumn">
+			<h2 class="footerHeader"><a href="Providing Solutions.html"> Providing Solutions </a></h2>
+			<ul class="footerList">
+				<li class="footerItem"><a href="Providing Solutions.html"> Areas we Work in</a></li>
+			</ul>
+		</div>
+
+
+		<div id="footerColumn">
+			<h2 class="footerHeader"><a href="Management Team.html"> Management Team </a></h2>
+		</div>
+
+		<div id="footerColumn">
+			<h2 class="footerHeader"><a href="Partnerships.html"> Partnerships </a></h2>
+			<ul class="footerList">
+				<li class="footerItem"><a href="Partnerships.html#FirstNationsHeader"> Industry Partners </a></li>
+				<li class="footerItem"><a href="Partnerships.html#FirstNationsHeader"> First Nations </a></li>
+			</ul>
+		</div>
+
+		<div id="footerColumn">
+			<h2 class="footerHeader"><a href="Contact Us.html"> Contact Us </a></h2>
+		</div>
+
+		
+	</div>
+		Isaac Parsons, Copyright © 2017
+</footer>
+</body>
+</html>
